@@ -11,7 +11,7 @@
         const num1=document.getElementById("n1").value
         const num2=document.getElementById("n2").value
         const num3=document.getElementById("n3").value
-        const reponse=await fetch("http://localhost:5000/sum?a="+num1+"&b="+num2+"&c="+num3)
+        const reponse=await fetch("https://interestcalc-production.up.railway.app/sum?a="+num1+"&b="+num2+"&c="+num3)
         const finalans=await reponse.text()
         b.innerHTML=`<p class="result-box"><h1 class="result-h">LUND LE LE MERA INTEREST KE 14.</h1>(but koi na ye le jawab : ${finalans})</p>`
         //b.innerHTML= parseInt(num1)+parseInt(num2);
