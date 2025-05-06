@@ -5,13 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let de;
-    function DebouncedDivG(){
-        clearTimeout(de)
-        de=setTimeout(()=>{
-            divMyG()
-        },100)
-    }
+
     async function divMyG(){
         let b=document.getElementById("finalSum")
         const num1=document.getElementById("n1").value
@@ -36,7 +30,7 @@
         <div class="inputbox">
             <input type="text" title="num3" id="n3" placeholder="Enter Time">
         </div>
-        <button class="btn" onclick="DebouncedDivG()" id="btn" type="submit">Calculate Interest</button>
+        <button class="btn" onclick="divMyG()" id="btn" type="submit">Calculate Interest</button>
         <div id="finalSum">
             
         </div>
